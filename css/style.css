@@ -1,0 +1,262 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: sagorpstu17@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+/* ?Theme default css */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Rufina:wght@400;700&display=swap'); */
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+    height: auto;
+}
+
+
+.fix {
+    overflow: hidden;
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+
+    text-decoration: none;
+}
+
+a,
+button {
+
+    outline: none;
+    text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+
+li {
+    list-style: none
+}
+
+
+.overlay {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000008f;
+    opacity: 0.9;
+}
+
+/* ?Modified Part */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin-top: 0px;
+    font-style: normal;
+    text-transform: normal;
+    font-weight: 700;
+    color: #000A2D;
+
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 0px;
+    line-height: 1.7;
+    color: #6e7797;
+}
+
+/* *Start Here */
+
+.main-slider .slick-arrow {
+    position: absolute;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+    z-index: 1;
+    color: #fff;
+}
+
+.main-slider .slick-next{
+    right: 20px;
+}
+
+.main-slider .slick-prev {
+    right: 80px;
+}
+
+.main-slider img{
+    max-height: 100vh;
+}
+
+.navbar .nav-link{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.navbar .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 6px;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.navbar .nav-link:hover:before{
+    opacity: 1;
+    width: 90%;
+}
+
+
+/* SideBar CSS */
+.sidebar {
+    background: #091b29;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    right: -220px;
+    top: 0;
+    z-index: 9;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+
+}
+
+.sidebar.active {
+    right: 0;
+
+}
+
+#sideNavTgl {
+    position: fixed;
+    right: 40px;
+    top: 20px;
+}
+
+#sideBarNavClose {
+    display: none;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.sideNav {
+    padding-top: 78px;
+}
+
+.sideNav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 20px;
+
+}
+
+.sideNav .nav-link.active,
+.sideNav .nav-link:hover {
+    background-color: #09090985;
+}
+
+.sideNav .nav-link:hover {
+    padding-left: 30px;
+}
+
+@media(max-width:575px){
+    .slick-arrow{
+        display: none !important;
+    }
+
+    .sidebar {
+        background: #091b29;
+        width: 170px;
+        right: -170px;
+        
+    }
+
+    #sideNavTgl {
+        right: 10px;
+        
+    }
+}
